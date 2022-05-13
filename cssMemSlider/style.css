@@ -25,32 +25,54 @@ body{
   display: none;
 }
 
-.slides{
+.view-window{
+  width: 100%;
   height: 80%;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  transition: 1s;
+}
+
+#meme-1:checked ~ .view-window .slides{
+  transform: translate(0, 0);
+}
+
+#meme-2:checked ~ .view-window .slides{
+  transform: translate(-25%, 0);
+}
+
+#meme-3:checked ~ .view-window .slides{
+  transform: translate(-50%, 0);
+}
+
+#meme-4:checked ~ .view-window .slides{
+  transform: translate(-75%, 0);
 }
 
 .slide{
   width: 100%;
-  height: 80%;
 }
 
 .slide-1{
-  background: no-repeat center url('./image/meme1.jpg');
+  background: no-repeat center / contain url('./image/meme1.jpg');
 }
 
 .slide-2{
-  background: no-repeat center url('./image/meme2.jpg');
+  background: no-repeat center / contain url('./image/meme5.jpg');
 }
 
 .slide-3{
-  background: no-repeat center url('./image/meme3.jpg');
+  background: no-repeat center / contain url('./image/meme3.jpg');
 }
 
 .slide-4{
-  background: no-repeat center url('./image/meme4.jpg');
+  background: no-repeat center / contain url('./image/meme7.jpg');
 }
 
 .description{
