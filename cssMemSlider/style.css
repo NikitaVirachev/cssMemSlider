@@ -67,10 +67,35 @@ body{
   height: 100%;
 }
 
+#meme-1:checked ~ .description .names{
+  transform: translate(0, 0);
+}
+
+#meme-2:checked ~ .description .names{
+  transform: translate(0, -25%);
+}
+
+#meme-3:checked ~ .description .names{
+  transform: translate(0, -50%);
+}
+
+#meme-4:checked ~ .description .names{
+  transform: translate(0, -75%);
+}
+
 .name{
   height: 25%;
   opacity: 0;
   visibility: hidden;
+}
+
+#meme-1:checked ~ .description .names .name-1,
+#meme-2:checked ~ .description .names .name-2,
+#meme-3:checked ~ .description .names .name-3,
+#meme-4:checked ~ .description .names .name-4{
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 3s, opacity 3s;
 }
 
 .menu{
