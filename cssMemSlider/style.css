@@ -149,16 +149,26 @@ body{
 #meme-2:checked ~ .description .menu #label-2 .circle,
 #meme-3:checked ~ .description .menu #label-3 .circle,
 #meme-4:checked ~ .description .menu #label-4 .circle{
-  background-color: white;
+  background-color: #25282a;
+  border: 3px solid #71acfe;
+}
+
+#meme-1:checked ~ .description .menu #label-1:hover .circle,
+#meme-2:checked ~ .description .menu #label-2:hover .circle,
+#meme-3:checked ~ .description .menu #label-3:hover .circle,
+#meme-4:checked ~ .description .menu #label-4:hover .circle{
+  border: 3px solid white;
 }
 
 .menu label:hover .circle{
   background-color: white;
+  border: 3px solid white;
 }
 
 .circle{
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 1px solid white;
+  background-color: #71acfe;
+  border: 3px solid #71acfe;
 }
