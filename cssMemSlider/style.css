@@ -84,10 +84,23 @@ body{
   align-items: flex-start;
 }
 
+@media screen and (max-width: 768px){
+  .description{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 .names{
   transform: translate(0, 0);
   transition: translate 3s;
   height: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .names{
+    align-self: flex-start;
+  }
 }
 
 #meme-1:checked ~ .description .names{
