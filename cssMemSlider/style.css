@@ -109,6 +109,13 @@ body{
   cursor: pointer;
 }
 
+#meme-1:checked ~ .description .menu #label-1 .circle,
+#meme-2:checked ~ .description .menu #label-2 .circle,
+#meme-3:checked ~ .description .menu #label-3 .circle,
+#meme-4:checked ~ .description .menu #label-4 .circle{
+  background-color: white;
+}
+
 .menu label:hover .circle{
   background-color: white;
 }
