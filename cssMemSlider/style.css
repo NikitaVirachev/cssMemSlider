@@ -1,0 +1,96 @@
+body{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.wrapper{
+  background-color: #25282a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-slider{
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meme-slider input{
+  display: none;
+}
+
+.slides{
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.slide{
+  width: 100%;
+  height: 80%;
+}
+
+.slide-1{
+  background: no-repeat center url('./image/meme1.jpg');
+}
+
+.slide-2{
+  background: no-repeat center url('./image/meme2.jpg');
+}
+
+.slide-3{
+  background: no-repeat center url('./image/meme3.jpg');
+}
+
+.slide-4{
+  background: no-repeat center url('./image/meme4.jpg');
+}
+
+.description{
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.names{
+  transform: translate(0, 0);
+  transition: translate 3s;
+  height: 100%;
+}
+
+.name{
+  height: 25%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu label {
+  padding: 1vw;
+  cursor: pointer;
+}
+
+.menu label:hover .circle{
+  background-color: white;
+}
+
+.circle{
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}

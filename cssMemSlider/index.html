@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Mem slider</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Mem slider</title>
 </head>
 <body>
-    
+  <div class="wrapper">
+    <div class="meme-slider">
+      <input type="radio" name="memes" id="meme-1" checked>
+      <input type="radio" name="memes" id="meme-2">
+      <input type="radio" name="memes" id="meme-3">
+      <input type="radio" name="memes" id="meme-4">
+
+      <div class="slides">
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+        <div class="slide slide-4"></div>
+      </div>
+
+      <div class="description">
+        <div class="names">
+          <div class="name name-1">Name 1</div>
+          <div class="name name-2">Name 2</div>
+          <div class="name name-3">Name 3</div>
+          <div class="name name-4">Name 4</div>
+        </div>
+
+        <div class="menu">
+          <label for="meme-1">
+            <div class="circle"></div>
+          </label>
+          <label for="meme-2">
+            <div class="circle"></div>
+          </label>
+          <label for="meme-3">
+            <div class="circle"></div>
+          </label>
+          <label for="meme-4">
+            <div class="circle"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
