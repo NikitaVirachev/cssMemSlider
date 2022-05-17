@@ -61,7 +61,7 @@ body{
 }
 
 .slide-1{
-  background: no-repeat center / contain url('./image/meme1.jpg');
+  background: no-repeat center / contain url('./image/meme13.jpg');
 }
 
 .slide-2{
@@ -69,11 +69,11 @@ body{
 }
 
 .slide-3{
-  background: no-repeat center / contain url('./image/meme3.jpg');
+  background: no-repeat center / contain url('./image/meme2.jpg');
 }
 
 .slide-4{
-  background: no-repeat center / contain url('./image/meme4.jpg');
+  background: no-repeat center / contain url('./image/meme12.jpg');
 }
 
 .description{
