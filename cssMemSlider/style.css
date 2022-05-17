@@ -1,0 +1,176 @@
+body{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.wrapper{
+  background-color: #25282a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-slider{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meme-slider input{
+  display: none;
+}
+
+.view-window{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  padding: 5% 0 5% 0;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: 1s;
+}
+
+#meme-1:checked ~ .view-window .slides{
+  transform: translate(0, 0);
+}
+
+#meme-2:checked ~ .view-window .slides{
+  transform: translate(-25%, 0);
+}
+
+#meme-3:checked ~ .view-window .slides{
+  transform: translate(-50%, 0);
+}
+
+#meme-4:checked ~ .view-window .slides{
+  transform: translate(-75%, 0);
+}
+
+.slide{
+  width: 100%;
+}
+
+.slide-1{
+  background: no-repeat center / contain url('./image/meme13.jpg');
+}
+
+.slide-2{
+  background: no-repeat center / contain url('./image/meme5.jpg');
+}
+
+.slide-3{
+  background: no-repeat center / contain url('./image/meme2.jpg');
+}
+
+.slide-4{
+  background: no-repeat center / contain url('./image/meme12.jpg');
+}
+
+.description{
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px){
+  .description{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.names{
+  transform: translate(0, 0);
+  transition: translate 3s;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .names{
+    align-self: flex-start;
+  }
+}
+
+#meme-1:checked ~ .description .names{
+  transform: translate(0, 0);
+}
+
+#meme-2:checked ~ .description .names{
+  transform: translate(0, -25%);
+}
+
+#meme-3:checked ~ .description .names{
+  transform: translate(0, -50%);
+}
+
+#meme-4:checked ~ .description .names{
+  transform: translate(0, -75%);
+}
+
+.name{
+  height: 25%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#meme-1:checked ~ .description .names .name-1,
+#meme-2:checked ~ .description .names .name-2,
+#meme-3:checked ~ .description .names .name-3,
+#meme-4:checked ~ .description .names .name-4{
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 3s, opacity 3s;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.menu label {
+  padding: 1vw;
+  cursor: pointer;
+}
+
+#meme-1:checked ~ .description .menu #label-1 .circle,
+#meme-2:checked ~ .description .menu #label-2 .circle,
+#meme-3:checked ~ .description .menu #label-3 .circle,
+#meme-4:checked ~ .description .menu #label-4 .circle{
+  background-color: #25282a;
+  border: calc(1rem / 4) solid #71acfe;
+}
+
+#meme-1:checked ~ .description .menu #label-1:hover .circle,
+#meme-2:checked ~ .description .menu #label-2:hover .circle,
+#meme-3:checked ~ .description .menu #label-3:hover .circle,
+#meme-4:checked ~ .description .menu #label-4:hover .circle{
+  border: calc(1rem / 4) solid white;
+}
+
+.menu label:hover .circle{
+  background-color: white;
+  border: calc(1rem / 4) solid white;
+}
+
+.circle{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #71acfe;
+  border: calc(1rem / 4) solid #71acfe;
+}
